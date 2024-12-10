@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Daha fazla ve diğer form etiketleri için w3 bakılabilir.. -->
+
+    <!-- action ile backend tarafa bilgiler gönderilir. -->
+    <form action="register..php">
+      <!-- burada labeldeki for kısmı ile inputtaki id kısmı birbiri ile aynı olmalıdır çünkü bu bunun etiketi bu  anlamı olurr. -->
+      <div>
+        <label for="name" id="name">Adınız:</label>
+         <input type="text" id="name" />
+      </div>
+
+      <div>
+        <label for="surname">Soyad:</label>
+        <input type="text" id="surname" />
+      </div>
+
+      <div>
+        <label for="parola">Parola</label>
+        <input type="password"  id="parola">
+      </div>
+
+      <div>
+        <!-- textarea ile bir çok cümle kuracağımız text kutusu oluştururuz.. -->
+        <!-- cols ile sutün yani genişilik belirlerinir rows ile yükseklik yani satır belirlenir.. -->
+        <label for="intro">Kendini Anlat:</label>
+        <textarea name="" id="" cols="20" rows="5"></textarea>
+      </div>
+      
+      <div>
+        <!-- input radio da name ler aynı olursa bir tane radio buttonu seçmek zorunda kalırız. -->
+        <!-- radio buttonlarında id ve labeldeki for kısmını aynı yaparsak yuvarlak radio buttonu nun üzerine tıklamadan labeldeki html ve ya css text inin üzerine tıkladığımızda dahi seçim yapmış oluruzz.. -->
+          <p>En Sevdiğiniz Programlama Dili</p>
+
+          <input type="radio" name="programlama" id="html">
+          <label for="html">HTML</label>
+
+          <input type="radio" name="programlama" id="css">
+          <label for="css">CSS</label>
+
+          <input type="radio" name="programlama" id="javascript">
+          <label for="javascript">javascript</label>
+      </div>
+      <div>
+        <p>En Sevidğiniz programlama Dili</p>
+        <input type="checkbox" name="" id="python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" name="" id="c#">
+        <label for="c#">C#</label>
+
+        <input type="checkbox" name="" id="java">
+        <label for="java">Java</label>
+      </div>
+
+      <div>
+        <!-- select kutusunun kullanımında select etiketi içinde option etiketleri kullanılır. Oradaki value ise seçilen kocaeli programlamada 41 olarak kullanılırr. -->
+        <label for="cities">Şehir:</label>
+        <select id="cities">
+          <!-- açılır menü açıldığında disabled selected hidden yazdığımız için seçiniz kaybolur.. -->
+          <option value="" disabled selected hidden>Seçiniz</option>
+          <option value="41">Kocaeli</option>
+          <option value="34">İstanbul</option>
+          <option value="19">Çorum</option>
+          <option value="39">Kırklareli</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="gun">Doğum Günün</label>
+        <input type="date" name="" id="gun">
+      </div>
+
+      <div>
+        <label for="eposta">email:</label>
+        <input type="email"  id="eposta">
+      </div>
+
+      <button type="submit">Kaydet</button>
+      <!-- reset type formda yazılan veya işaretlenen bilgilerinin hepsini sıfırlar ve temizler.. -->
+      <button type="reset">Temizle</button>
+    </form>
+  </body>
+</html>

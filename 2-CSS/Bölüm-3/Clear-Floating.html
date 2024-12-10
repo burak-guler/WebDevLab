@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: brown ;
+            float: right;
+
+        }
+        #container{
+            background-color: blue;
+
+        }
+        /* burada aşagıda clear: both; için oluşturduğumuz divin görevini divi silip özellikleri burda veriyoruz. */
+        /* burada bahsettiğimiz clearfix classı divden sonra şunları yap demek..  */
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+        <div class="box" >KUTU-1</div>
+        <div class="box">KUTU-2</div>
+        <div class="box">KUTU-3</div>
+        <!-- buradaki div floating yaptıklarımızı temizlemek için yazıldı clear:both ise yazdığımız floatinglerin her ikisinide temizler burada biz hem right hem left den floating yaptığımız için both kullandık ama sadece right veya sadece left floating kullansaydık clear: left yada clear: right kullanırdık -->
+        <!-- <div style="clear: both;"></div> -->
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus necessitatibus vitae et sapiente neque quae voluptate cupiditate incidunt culpa placeat, accusamus delectus consequuntur ipsum iusto voluptas rerum enim dolorem assumenda? Omnis quasi assumenda reprehenderit delectus corrupti, exercitationem incidunt natus quaerat eius id temporibus! Fuga, voluptatum! Aliquid commodi deserunt sunt quis quia architecto fuga, officiis, eligendi porro deleniti consectetur dolores doloribus, aspernatur excepturi tenetur quas. Voluptatem dicta voluptas error quisquam adipisci maxime eum cupiditate totam atque ab natus odit architecto sit incidunt, fugit libero voluptatibus consequuntur consequatur esse cumque distinctio reprehenderit repellendus. Error quidem sint amet odio tempora! Quisquam, veritatis aliquam.</p>
+   
+    
+</body>
+</html>

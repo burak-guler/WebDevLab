@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        elemanarı yatayda konumlandırmak için JUSTİFY-CONTENT kullanılır.. 
+
+        elemanları dikeyde konumlandırmak için ALİGN-İTEMS kullanılır..
+        
+        */
+        
+        .container{
+            display: flex;
+            /* align-items: flex-end; */
+            flex-direction: column;
+            height: 500px;
+            background-color: red;
+           
+        }
+        .item{
+            background-color: yellow;
+            padding: 30px;
+            margin: 20px;
+            color: blue;
+            font-size: 25px;
+        }
+
+        .item-1{
+            /* item 1 yukarıda olur align-items özelliğinin itemlar bazında yani her item a teker teker konum veririz  */
+            align-self: flex-start;
+
+        }
+        .item-2{
+            align-self: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+        <div class="item item-4">item 4</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        elemanarı yatayda konumlandırmak için JUSTİFY-CONTENT kullanılır.. 
+
+        elemanları dikeyde konumlandırmak için ALİGN-İTEMS kullanılır..
+        
+        */
+        
+        .container{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            gap: 30px;
+            /* itemlar arası hem yatayda hem dikeyde boşluk bırakmak için kullanrız */
+
+            /* row-gap: 10px;
+               column-gap: 10px; 
+                hem satır gem sutun bazında itemlar arası boşluk verebiliriz
+            */
+
+            /* birden fazla item varsa ve bu itemlar birden fazla satırda sıralanıyorsa bunları ortaya veya flex-end flex-start kullanarak başa ve sona alabliriz */
+            /* align-content: center; */
+
+            /* align-content: flex-start;
+            align-content: flex-end;
+            align-content: space-around;
+            align-content: space-between;
+            align-content: space-evenly; */
+
+
+            /* align-content: space-between; 
+                satırlar arası space-between işlemini yapar
+            */
+
+
+            height: 500px;
+            background-color: red;
+           
+        }
+        .item{
+            background-color: yellow;
+            padding: 30px;
+            /* margin: 20px; */
+            color: blue;
+            font-size: 25px;
+
+
+    
+        }
+
+       
+
+    
+        
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="item ">item 1</div>
+        <div class="item ">item 2</div>
+        <div class="item ">item 3</div>
+        <div class="item ">item 4</div>
+        <div class="item ">item 5</div>
+        <div class="item ">item 6</div>
+        <div class="item ">item 7</div>
+        <div class="item ">item 8</div>
+    
+    </div>
+
+</body>
+</html>

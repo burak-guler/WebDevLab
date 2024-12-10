@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-areas:
+          "header header header"
+          "sidebar content content"
+          "box1 box2 box3"
+          "footer footer footer";
+        /* . . koyduğumuz yere ise herhangi sıradaki eleman gelmesi sağlar.. */
+        /*grid-template-areas: ile hangisinin nerede kaç kolon kaç satır kaplayacağını yazarız.  verdiğimiz isimler ile etiket veya classlar verdiğimiz grid-area: isimleri aynı olmalıdır class veya etiket 
+                              isimleri ile alakası yoktur..
+                              */
+        gap: 10px;
+      }
+      header {
+        grid-area: header;
+        background-color: red;
+        text-align: center;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: blue;
+      }
+      .content {
+        grid-area: content;
+        background-color: yellow;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: aqua;
+      }
+      .box-1 {
+        grid-area: box1;
+        background-color: blueviolet;
+      }
+
+      header,
+      .content,
+      .sidebar,
+      .box-1,
+      .box-3,
+      .box-2 {
+        border: 1px solid #ccc;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-areas:
+            "header  "
+            "sidebar"
+            "content"
+            "box1"
+            "box2"
+            "box3"
+            "footer";
+        }
+      }
+      @media (max-width: 500px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2>Page Header</h2>
+      </header>
+      <section class="content">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          unde commodi, doloremque inventore mollitia tenetur quis nisi earum
+          explicabo deserunt. Voluptas quo eos, velit tempora dolores eaque ea
+          sapiente eum!
+        </p>
+      </section>
+      <section class="sidebar">
+        <h2>Lorem, ipsum.</h2>
+        <ul>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+          <li>Lorem, ipsum.</li>
+        </ul>
+      </section>
+      <div class="box-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis
+        excepturi aperiam reprehenderit nostrum ipsa cupiditate asperiores atque
+        modi dolore incidunt non harum omnis officia quae impedit, dolor
+        laudantium explicabo.
+      </div>
+      <div class="box-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis
+        excepturi aperiam reprehenderit nostrum ipsa cupiditate asperiores atque
+        modi dolore incidunt non harum omnis officia quae impedit, dolor
+        laudantium explicabo.
+      </div>
+      <div class="box-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis
+        excepturi aperiam reprehenderit nostrum ipsa cupiditate asperiores atque
+        modi dolore incidunt non harum omnis officia quae impedit, dolor
+        laudantium explicabo.
+      </div>
+      <footer class="footer">Lorem ipsum dolor sit amet.</footer>
+    </div>
+  </body>
+</html>

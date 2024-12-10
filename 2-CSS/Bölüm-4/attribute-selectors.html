@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ---------attribute selector---------- */
+
+        /* a[target]{
+            background-color: red;
+
+        }
+        [class]{
+
+            background-color: blue;
+        } */
+
+
+        /*------------------ attribute value selector---------------- */
+        
+        /* a[class="active"]{
+            background-color: blue;
+        }
+
+        [class="active"]{
+            background-color: blue;
+        } */
+
+
+        /* ----------------attribute '*' selector -----------------------*/
+
+        /* içerisinde class da active kelimesi geçen bütün etiketlere etki yapar, classın ismi active-span olsa dahi active geçtiği için etkilenir.. */
+
+        /* [class*="active"]{
+            background-color: blue;
+        } */
+
+        /*------------------ attribute '~' selector---------------- */
+
+        /* sadece içerisinde active class ına sahip olanlar etkilenir */
+
+        /* [class~="active"]{
+            background-color: blue;
+        } */
+
+        /* ----------------------attribute '|' selector------------------ */
+        /* en başta içerisinde sadece active class bulunduruan veya birleşik kelime olarak active kelimesi geçiren olanlar etkilernir farklı
+        veya birden fazla class olursa etki yapmaz. */
+        /* [class|="active"]{
+            background-color: blue;
+        } */
+
+        /* --------------attribute '^' selector -----------------*/
+
+        /* en başta içerisinde sadece active class bulunduruan veya birleşik kelime olarak active kelimesi geçiren olanlar etkilernir farklı ama birden fazla class varsa yinede etkisni gösterir */
+
+        /* [class^="active"]{
+            background-color: blue;
+        } */
+
+        /* ---------------attribute '$' selector------------------ */
+
+        /* sonda olan active class ına etki yapar */
+
+        /* [class$="active"]{
+            background-color: blue;
+        } */
+        
+
+    </style>
+</head>
+<body>
+    
+    <span class="active span text">Text</span>
+
+    <nav>
+        <a href="" target="_blank">Home</a>
+        <a href="" class="active">About</a>
+        <a href="" class="link">Contact</a>
+    </nav>
+
+
+</body>
+</html>

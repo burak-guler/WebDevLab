@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            css özelliklerini etiket üzerinden ulaşırsak en son yazılan geçerli olur 
+            h1 {color: blue;}
+            h1{color: red;}
+            h1 red olur en son o yazıldığı için..
+        */
+        /* 
+            #page-title{color: red;}
+            h1{color: blue;}
+
+            iki selector da h1 etkiliyor ancak birisi id ile birisi etiket ile ulaşıyor
+            id nin etikete önceliği olduğundan id kabul görür ve red olur..
+        */
+
+        /* 
+            INLINE CSS(<h1 style="color: red;">Burak</h1>) > ID > CLASS > H1(h1{color: red;} etiket ile ulaşmak) > tarayıcı default 
+        */
+
+        /* inline css */
+        /* id selectors */
+        /* class selectors */
+        /* tag selectors */
+        /* browser default */
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section >
+            <h1 id="page-title" class="text-white ">welcome to MovieApp</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repellendus.
+            </p>
+        </section>
+        <!-- bir etikete birden fazla class verilebilir. -->
+        <section >
+            <h2 id="page-subtitle" class="text-white ">How it works?</h2>
+        </section>
+    </main>
+</body>
+</html>

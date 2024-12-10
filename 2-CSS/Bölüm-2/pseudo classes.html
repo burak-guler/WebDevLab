@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            border: 1px solid gray;
+            padding: 5px 8px;
+            display: inline-block;
+            text-decoration: none;
+            width: 60px;
+            text-align: center;
+        }
+        /* Ziyaret edilmemiş link */
+        a:link {
+            color: red;
+
+        }
+        /* Linkin daha önce ziyaret edildiği tıklandığını söylüyor  */
+        a:visited{
+            color: green;
+
+        }
+        /* a linkinin etiketinin üstüne geldiğim zaman durumu */
+        a:hover {
+            color: #ffff;
+            background-color: black;
+
+
+        }
+        /* a ya tıkladığımız anda yani tıklayıp beklettiğimizde durum */
+        a:active{
+            color: #ffff;
+            background-color: yellow;
+
+        }
+        div:hover{
+            border: 2px solid black;
+        }
+        div:hover p{
+            background-color: red;
+            color: yellow;
+            display: block;
+
+        }
+        p {
+            display: none;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- pseudo classes -->
+    <a href="borders.html">Home</a>
+    <a href="display.html">Products</a>
+    <a href="combinators.html">About</a>
+    <br> <br>
+    <div>
+        Click here!!
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea expedita voluptates dolorem porro iste, aliquid culpa amet, ratione, ipsum ducimus exercitationem eveniet iusto ex officia reprehenderit optio suscipit magnam.</p>
+    </div>
+
+    <!-- pseudo elments -->
+</body>
+</html>

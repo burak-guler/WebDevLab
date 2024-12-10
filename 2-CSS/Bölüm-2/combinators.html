@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 div p {
+            background-color: red;
+        }
+        .div2 div > p {
+            background-color: red;
+        }
+        .div3 div + p {
+            background-color: red;
+        }
+        .div4 div ~ p {
+            background-color: red;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- COMBİNATORS -->
+    
+    
+    <!-- 1-Descendant selectors() -->
+    <!-- sadece div altındaki bütün p  elemanlarını kapsar yani div in torunlarınıda kapsar -->
+    <div class="div1">
+        <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+</div>
+<hr>
+    
+    <!-- 2-Child selectors(>) -->
+    <!-- sadece divin çocuklarını kapsar torunlarını kapsamaz yani section altındaki p etiketini etkilemezz-->
+    <div class="div2">
+        <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+</div>
+<hr>
+    <!-- 3-Adjacent sibling selectors(+) -->
+    <!-- div etiketinden sonra gelen ilk p etiketini kapsar -->
+    <div class="div3">
+        <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+</div>
+<hr>
+    <!-- 4-General sibling selectors(~) -->
+    <!-- div etiketinden sonra gelen bütün p etiketlerini kapsar. -->
+    <div class="div4">
+        <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+</div>
+<hr>
+    
+</body>
+</html>

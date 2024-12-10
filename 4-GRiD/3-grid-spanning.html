@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     
+
+      .container {
+        display: grid;
+
+        grid-template-columns: repeat(6,auto);
+
+        background-color: #034f84;
+
+        /* satır ve sütun arasında 10 pxlik bir boşluk bıraktık.. */
+        gap: 10px;
+        /* row-gap: 10px; ile ise sadece satırlar arası bir boşluk verir.
+          columns-gap:10px; ile ise sadece sutünlar yani kolonlar arası bir boşluk verir.
+        */
+
+
+        
+      }
+
+      .item {
+        background-color: #f7786b;
+        padding: 20px;
+        
+        color: #fff;
+        font-size: 25px;
+      }
+
+      /* first-child ilk eleman demek yani itemlarda ilkini seçmiş oluruz.. */
+      .item:first-child{
+        /* grid-column-start: 2; yaptığımızda seçtiğmiz item 2.kolonun başlangıcından başlar */
+
+        /* grid-column-start: 2; */
+
+        /* grid-column-end: 5; yaptığımızda seçtiğimiz kolunun uzunluğu 2.kolonun başlangıcından başlar
+          4.kolonun bitişi yani 5.kolonun başlangıcında biter aradaki kolonları birleştirir..
+        */
+        /* grid-column-end: 5; */
+
+        /* grid-row-start: 1;
+        grid-row-end: 3;
+        özellikleri ise columns özellikleri ile aynı işlevi görür yani başlangıç ve 
+        bitiş satırlarını atayabiliriz. 
+        */
+        /* grid-row-start: 1; */
+        /* grid-row-end: 3; */
+
+        /* aşağıdaki özellikler grid-column-end ve grid-column-start özellikleri aynı anda kullanmaya yarar
+        aynısı row içinde geçerli
+        */
+        /* grid-column: 2 / 5; */
+        /* grid-row: 1/ 3 ; */
+
+        /* 2.kolondan başla 4 kolonu kapla özelliği demektir.. */
+        /* grid-column: 2 / span 4; */
+
+        /* 1.satırdan başla 2 satır kapla özelliği demektir.. */
+        /* grid-row: 1/span 3; */
+
+        /* grid-row ile grid-column özelliklerini bir arada kullanma */
+        /* başlangıç satır/ başlangıç kolon/ bitiş satır veya kaplanan satır / bitiş sütun veya kaplanan sütun */
+        /* 1.satıdan başla 2 satır kapla ve 2.kolondan başla 4 kolon kapla demektir... */
+        grid-area: 1/2/span 2 / span 4;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 4</div>
+    </div>
+  </body>
+</html>

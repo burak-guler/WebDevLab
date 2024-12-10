@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /*display:flex;
+             container i yani kapsayıcı olanı display:flex  yaptıgımızda içerdeki elemanlar kendi içeriği kadar yer kaplar  ve satırda inline-block gibi davranır */
+            display: flex;
+
+            /* flex-direction: row; */
+            /*  flex-direction: row; 
+                display:flex yaptıgımızda default olarak flex-direction: row; olarak tanımlanır yani yatayda sıralanırlar ve inline-block gibi davranırlar
+            */
+            flex-direction: row-reverse;
+            /* içerigi yani itemleri sağdan ters sıralar. */
+
+            /* flex-direction: column; */
+            /* itemları dikeyde sıralar */
+            /* flex-direction: column-reverse; */
+            /* itemları dikeyde ters sıralar */
+
+            flex-wrap: nowrap;
+            /* 
+                flex-wrap: nowrap;
+                bu özellik default dur ve  sayfayı küçülttüğümüzde içeriğin aşağıya inmesini önler ve altta scroll bar ın çıkmasını sağlar
+            */
+            /* flex-wrap: wrap; */
+            /* 
+                flex-wrap: wrap;
+                sayfayı küçülttüğümüzde itemlar aşağıya iner ve responsive tasarım için önemlidir. 
+            */
+            /* flex-wrap: wrap-reverse; */
+            /* 
+                tersten aşağıya inmeye başlar.
+            */
+
+            /* flex-flow: row wrap-reverse; */
+            flex-flow: row wrap;
+            /* 
+                row ve wrap özelliğini ikisini bir kullanmamızı sağlar..
+            */
+
+            background-color: red;
+            padding: 15px;
+        }
+        .item{
+            background-color: yellow;
+            padding: 30px;
+            margin: 20px;
+            color: blue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        elemanarı yatayda konumlandırmak için JUSTİFY-CONTENT kullanılır.. 
+
+        elemanları dikeyde konumlandırmak için ALİGN-İTEMS kullanılır..
+        
+        */
+        
+        .container{
+            display: flex;
+         
+            height: 500px;
+            background-color: red;
+           
+        }
+        .item{
+            background-color: yellow;
+            padding: 30px;
+            margin: 20px;
+            color: blue;
+            font-size: 25px;
+
+
+             /*flex grow, flex shrink ve flex basis özelliklerini sırası ile tekbir özellikte kullanabiliriz..  */
+            /* flex: 0 1 200px; */
+        }
+
+        .item-1{
+        /* 1.item özelliğine flex-grow:3; 2.item özelliğine ise flex-grow:1 desek itemları 3 1 oranında genişlik yani yer kaplar flex row onu belirliyor.. */
+        /* flex-grow: 3; */
+        flex: 25%;
+
+        order: 1;
+        /* order a verdğimiz sayı sıralama önceliğini belirler default olarak hepsi 0 dır eksi değer alan başa gelir */
+
+        }
+        .item-2{
+            /* flex-grow: 1; */
+            flex: 25%;
+
+            order: 2;
+        }
+        .item-3{
+            flex: 50%;
+
+            order: -1;
+            /* flex-basis: 200px; ile kutuya başlangıçta sabit bir genişlik verdik */
+            /* flex-basis: 200px; */
+            /* flex-shrink:0; yaptığımızda flex-basis ile verdiğimiz sabit genişlik tarayıcı küçülse bile 200px altına inmez ama flex-shrink:1; olduğunda tarayıcı küçüldüğünde item-3 de 200px in altına iner */
+            /* flex-shrink: 0; */
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="item item-1">item 1</div>
+        <div class="item item-2">item 2</div>
+        <div class="item item-3">item 3</div>
+    </div>
+
+</body>
+</html>

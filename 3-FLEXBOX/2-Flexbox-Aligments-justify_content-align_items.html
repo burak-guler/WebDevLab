@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        elemanarı yatayda konumlandırmak için JUSTİFY-CONTENT kullanılır.. 
+
+        elemanları dikeyde konumlandırmak için ALİGN-İTEMS kullanılır..
+        
+        */
+        /* flex-direction:column yaptığımızda dikeyde justify yatayda align kullanmamız gerek yani iki özellik yer değiştirir. */
+        
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items:center;
+            /* justify-content: center; */
+            
+            
+            /* justify-content: center;
+             itemleri orataya alır */
+
+            /* justify-content: flex-end;
+             yatayda itemleri en sona sag tarafa alır */
+
+            /* justify-content: flex-start;
+             yatayda itemleri en başa en sola alır */
+
+            /* justify-content: space-around;
+             yatayda itemlerin arasında boşluk bırakarak  sıralar baştaki ve sondaki itemin container ile arasında x boşluk varsa itemler arası boşluk 2x olur.. */
+
+             /* justify-content: space-evenly;
+                yatayda itemlar ve container arasında x kadar yani eşit boşluk bırakarak sıralar
+            */
+
+            /* justify-content: space-between;
+             itemler arasında eşit boşluk bırakır ve yatayda sıralar ama ilk ve son eleman ve container arasında boşluk bırakmaz ikili itemlar da sag ve sola diye ayırır. */
+
+
+
+            /* align-items: stretch; 
+            itemlerin yüksekliği containerin yüksekliği kadar olur..*/
+
+             /* align-items: flex-start;
+                itemleri  containerin dikeyde en üst tarafda sıralar
+             */
+             /* align-items: flex-end; 
+                itemleri  containerin dikeyde en alt tarafda sıralar
+             */
+
+             /* align-items: center; 
+                itemleri  containerin dikeyde orta tarafında sıralar
+
+             */
+             
+             
+
+            
+            height: 500px;
+            background-color: red;
+            padding: 15px;
+        }
+        .item{
+            background-color: yellow;
+            padding: 30px;
+            /* margin: 20px; */
+            color: blue;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+
+</body>
+</html>

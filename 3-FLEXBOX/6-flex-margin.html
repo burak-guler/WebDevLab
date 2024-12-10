@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+        elemanarı yatayda konumlandırmak için JUSTİFY-CONTENT kullanılır.. 
+
+        elemanları dikeyde konumlandırmak için ALİGN-İTEMS kullanılır..
+        
+        */
+        
+        .container{
+            display: flex;
+            height: 500px;
+            background-color: red;
+
+            /* align-items: stretch; */
+           
+        }
+        .item{
+            background-color: yellow;
+            padding: 30px;
+            margin: 20px;
+            color: blue;
+            font-size: 25px;
+
+            /* margin-top: auto;
+                item containerin sol alt köşesinde olur
+            */
+            /* margin-bottom: auto;
+                item containerin sol üst köşesinde olur
+            */
+
+            /* margin-left: auto;
+                item kendini sağ tarafa doğru iter ve sağda olur stretch özelliğinde kalır
+            */
+            /* margin-right: auto;
+            item kendini sol tarafa doğru iter ve solda olur stretch özelliğinde kalır. 
+            */
+        }
+
+        .item-1{
+            margin-right: auto;
+            margin-top: auto;
+            /* margin: auto; */
+
+        }
+        .item-2{
+            margin-left: auto;
+            margin-top: auto;
+            /* margin: auto; */
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="item item-1 ">item 1</div>
+        <div class="item item-2">item 2</div>
+        
+    </div>
+
+</body>
+</html>

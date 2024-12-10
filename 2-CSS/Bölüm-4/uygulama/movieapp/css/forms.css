@@ -1,0 +1,61 @@
+.signup-page{
+    padding-top: 20px;
+
+}
+.signup-tittle{
+    text-align: center;
+    font-size:30px ;
+    color: #2e4c6d;
+
+}
+.signup-forms{
+    width: 500px;
+    margin: auto;
+}
+.signup-forms label,
+/* checkbox type da  olanları bu özelliklerden almamasını sağladık. */
+.signup-forms input:not([type="checkbox"]),
+.signup-forms select{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.signup-forms input[type="checkbox"],
+.signup-forms input[type="checkbox"] + label{
+    display: inline-block;
+    width: auto;
+    margin-top: 15px;
+}
+
+.signup-forms button[type="submit"]{
+    display: block;
+    margin-top: 15px;
+}
+
+.signup-forms input:not([type="checkbox"]),
+.signup-forms select{
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+}
+.signup-forms input:not([type="checkbox"]):focus,
+.signup-forms select:focus{
+    outline: none; 
+    background-color: yellow;
+    border: 1px solid greenyellow;
+}
+.signup-forms input[type="checkbox"]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2e4c6d;
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+.signup-forms input[type="checkbox"]:hover{
+    background: gray;
+}
+/* checkbox a tıkladığımızda olacak olan olay */
+.signup-forms input[type="checkbox"]:checked{
+    background: #fc99fc;
+}

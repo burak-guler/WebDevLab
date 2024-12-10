@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        .bg{
+            background-position: center;
+            background-size: cover;
+            /*background-attachment: fixed; yaptığımızda sayfada aşağıya doğru gittiğimizde resim olduğu yerde kalır.  */
+            background-attachment: fixed;
+            position: relative;
+
+        }
+        .bg-image1{ 
+            height: 100vh;
+            background-image: url("bg-2.jpeg");
+        }
+        .bg-image2{
+            height: 50vh;
+            background-image: url("bg-3.jpeg");
+        }
+        .caption{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            
+        }
+        .caption .border{
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+
+        }
+        .box{
+            color: #777;
+            background-color: #fff;
+            text-align: center;
+            padding: 50px 80px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bg bg-image1">
+        <div class="caption">
+            <span class="border">Lorem, ipsum.</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, tenetur. Aliquam distinctio veritatis voluptas ad excepturi omnis dolorum, expedita enim officia ipsam reprehenderit eligendi. Repudiandae deleniti suscipit cumque labore perferendis.
+            Perspiciatis, illum, sequi dolorem laboriosam nemo temporibus numquam obcaecati neque itaque quaerat natus. Nemo ducimus nostrum laudantium dolor cumque, ratione omnis. Pariatur nulla possimus quisquam optio ipsa temporibus quod delectus.
+            Fugiat natus nulla a officia, veniam repellat ab nesciunt, inventore temporibus esse dolore? Sint voluptate vitae aut quis, fuga mollitia eveniet quisquam excepturi harum veniam, magni possimus. Incidunt, placeat dignissimos.
+        </p>
+    </div>
+    <div class="bg bg-image2">
+        <div class="caption">
+            <span class="border">Lorem, ipsum.</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, tenetur. Aliquam distinctio veritatis voluptas ad excepturi omnis dolorum, expedita enim officia ipsam reprehenderit eligendi. Repudiandae deleniti suscipit cumque labore perferendis.
+            Perspiciatis, illum, sequi dolorem laboriosam nemo temporibus numquam obcaecati neque itaque quaerat natus. Nemo ducimus nostrum laudantium dolor cumque, ratione omnis. Pariatur nulla possimus quisquam optio ipsa temporibus quod delectus.
+            Fugiat natus nulla a officia, veniam repellat ab nesciunt, inventore temporibus esse dolore? Sint voluptate vitae aut quis, fuga mollitia eveniet quisquam excepturi harum veniam, magni possimus. Incidunt, placeat dignissimos.
+        </p>
+    </div>
+</body>
+</html>

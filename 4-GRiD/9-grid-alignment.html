@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+             .container{
+                          display: grid;
+
+                          grid-template-columns: repeat(3,15%);
+                          grid-template-rows: repeat(3,15%);
+
+                          gap: 10px;
+                          background-color: yellowgreen;
+                          height: 600px;
+
+                          /* justify-items: stretch; 
+                          default özellik budur yatayda container içindeki
+                          itemlar yatayda blulnduğu yeri komple kaplar
+                          */
+
+                          /* justify-items: center; 
+                          item yatayda ortaya gelir ve içerik knkar yer kaplar 
+                          */
+
+                          /* justify-items: end; */
+                          /* justify-items: start;
+                          itemlar başa ve sona gelir yatayda içerik kadar yer kaplar
+                          */
+
+                          /* align-items: stretch; 
+                          default özellik budur dikeyde container içindeki
+                          itemlar dikeyde blulnduğu yeri komple kaplar
+                          */
+
+                          /* align-items: center;
+                          item dikeyde ortaya gelir ve içerik knkar yer kaplar 
+                          */
+
+                          /* align-items: end; */
+                          /* align-items: start;
+                          itemlar başa ve sona gelir dikeyde içerik kadar yer kaplar
+                          */
+
+                          justify-content: center;
+                          align-content: center;
+             }
+             
+             .item{
+                          background-color: #f7786b;
+                          
+                         
+             }
+
+             .item:first-child{
+                          align-self: center;
+
+             }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="item">box 1</div>
+      <div class="item">box 2</div>
+      <div class="item">box 3</div>
+      <div class="item">box 4</div>
+      <div class="item">box 5</div>
+      <div class="item">box 6</div>
+    </div>
+
+  </body>
+</html>

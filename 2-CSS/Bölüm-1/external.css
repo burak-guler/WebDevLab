@@ -1,0 +1,17 @@
+section{
+    background-color:red ;
+    text-align: center;
+}
+h1{
+    color: #F8B400;
+}
+h2{
+    color: #40DFEF;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}

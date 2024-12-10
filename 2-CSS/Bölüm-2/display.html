@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box { height: 60px; width: 60px; display: inline-block; }
+        #first { background-color: red;}
+        #second { background-color: green;}
+        #third { background-color: blue;}
+        a{
+            display: block;
+            width: 100px;
+            height: 100px;
+            
+        }
+        #one{background-color: orangered;}
+        #two{background-color: aquamarine;}
+        #three{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <!-- display özellliklerinden bazıları -->
+    <!-- display: none | inline | inline-block | block -->
+    <!-- *Block eleman olması demek satırı komple kaplaması demek. -->
+    <!-- inline etiketlere genişlik ve yükseklik (width and height) verdiğimizde bir etki alamayız 
+        a link etiketi bir inline etiket olduğu için genişlik ve yükseklik değerleri verdiğimizde sonuç alamayız. -->
+    <!-- display: inline içerikler satırda yanyana gelir,  içindeki yazı veya içerik kadar yer kaplar ve verdiğimiz genişlik ve yükseklik özellikleri etki göstermez.. -->
+    <!-- display: inline-block özelliği yaparsak verdğimiz yükseklik ve genişlik değerleri etkisini göteririr ve satırda içerikler yanyana gelir..  -->
+
+    <div id="container">
+        <div class="box" id="first">first</div>
+        <div class="box" id="second">second</div>
+        <div class="box" id="third">third</div>
+    </div>
+    <div>
+        <a href="" id="one">Home</a>
+        <a href="" id="two">Movies</a>
+        <a href="" id="three">Contact</a>
+    </div>
+    
+</body>
+</html>

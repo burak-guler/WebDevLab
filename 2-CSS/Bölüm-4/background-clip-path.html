@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body
+        {
+            margin: 0;
+        }
+        #header{
+            /* 
+                background: ...... da olur
+                background-image: linear-gradient(to bottom right,#ff0000,#ff0); demek arkaplanda renk 
+                geçişi olmasını ayarlar to bottom right ise renk geçiş yönünü belirler
+            */
+            background-image: 
+                /* linear-gradient(to bottom right,rgba(230,255,230,0.7),rgba(102,255,10,0.7)), */
+                url("bg.jpg");
+            /* 100vh demek viewport da yani scroll çıkmadan kullanıcının gördüğü sayfada 100vh kapla demek   */
+            height: 100vh;
+            background-size: cover;
+            position: relative;
+            /* 
+                bu clip-path koordinatları için google bakabilirsin.
+            */
+            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+
+
+            
+            
+        }
+        #header h1{
+            /* margin: 0; */
+            position: absolute;
+            font-size: 80px;
+            color: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        .logo{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 70px;
+        }
+        /* 
+            -background-position:100px,100px; yaptığımızda arkaplanı ötelemiş oluruz 
+            -background-position:bottom resim alt tarafı gösterir.
+            -background-position:bottom right  resim alt sağ tarafı gösterir
+            -background-position:center resim orta kısım tarafı gösterir
+            --background-position:50%,50%; resim yatayda ve dikeyde yüzde elli gösterir buda centerla aynı işlevi görür
+            -background-repeat:no-repeat; tekrarlanan resim tekrarlanmaz.
+            -background-size:cover; resmi çerçeve sığdırmaya çalışır sığmasa bile sağdan soldan düzenli kırpar.
+
+        */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Background Text</h1>
+        <img src="logo.png" alt="" class="logo">
+        <!-- <div class="cover"></div> -->
+
+    </div>
+</body>
+</html>

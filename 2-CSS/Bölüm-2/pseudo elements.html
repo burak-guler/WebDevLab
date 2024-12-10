@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* first-line ilk satır demek ve yazılan özelikkler ilk satırı etkiler. */
+        p::first-line{
+            font-weight: bold;
+            color: red;
+            word-spacing: 3px;
+            letter-spacing: 1px;
+        }
+        /* p etiketlerinden clası about olan demek. */
+        p.about::first-line {
+            color: green;
+
+        }
+        /* p etiketinin ilk harfi ile ilgili özellikler, first-letter ilk harfi kapsayacak özellikler demek */
+        p::first-letter{
+            font-size: 48px;
+        }
+/* fare ile basılı tutarken yazıları seçerken oluşacak özellikler demek , sitede basılı tutarken yazı seçerken mavi oluyordu burada sarı yaptık bu bütün sayfayı kaplar ancak p::selection yaparsak sadece bu özellik p etiketlerinde geçerli olur.*/
+        ::selection {
+            background-color: yellow;
+        }
+        /* paragrafın veya başka bir etiketin  sonuna bişey eklerken kullanılır p::before yaptığımızda ise başına eklerizz  */
+        p::after{
+            content: '\261D';
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- pseudo classes -->
+
+    <!-- pseudo elements -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod doloribus deleniti dicta saepe architecto nihil hic recusandae cum atque dolore consequatur, autem necessitatibus eveniet dolores sunt at porro. Nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas recusandae ut dolorem atque illum! Repudiandae debitis perspiciatis voluptatem ullam, saepe eveniet non? Nobis, exercitationem odio? Minus odio veritatis labore iure!
+    </p>
+
+    <p class="about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, et. Quibusdam nisi, non dicta eaque at molestias fugiat voluptates distinctio placeat, cumque magni corrupti quod porro doloribus vel sed! Beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quibusdam pariatur culpa odio reprehenderit minima, tempore quam veritatis voluptate nulla esse a illum et recusandae est magni corporis aliquid debitis.
+    </p>
+
+</body>
+</html>

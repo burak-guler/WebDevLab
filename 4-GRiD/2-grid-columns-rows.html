@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        display: grid;
+        /* grid-template-columns: 150px 250px 400px 150px; diye yazdığımızda container
+         içinde bulunan elemnalara genişlik verir ve yanyana sıralar
+        */
+        /* grid-template-columns: 150px 250px 400px 150px; */
+
+        /* grid-template-columns: 200px auto auto 200px; yaptığımızda container içinde bulunan 4 elemandan ilk ve sondaki 200px 
+        genişilik alır kalan diğer 2 eleman ise auto olduğundan kalan genişlik kadar eşit genişlik alır.. 
+        */
+        /* grid-template-columns: 200px auto auto 200px; */
+
+        /* grid-template-columns: repeat(4,auto);
+        grid-template-columns: repeat(4,200px);
+        yaptığımızda hepsine ayrı ayrı genişlik vermektense 4 colon da auto veya
+        4 colonda 200px olsun diye biliriz.
+        */
+        grid-template-columns: repeat(2,auto);
+        /* grid-template-columns: repeat(4,200px); */
+
+        /* grid-template-columns: 150px 200px 1fr 2fr; yaptığımızda 1.colon 150px
+        2.colon 200px kalan genişlikliği ise 1 e 2 oranında dağıt demiş oluruz..
+        */
+        /* grid-template-columns: 150px 200px 1fr 2fr; */
+
+        /* grid-template-rows: 300px; yaptığımızda 1.satırın yükselğini 300px yap demektir
+        eğer birden fazla satır olsaydı onlarıda columns gibi yazabilir değer verirdik
+        ör: grid-template-rows: 300px 400px auto 1fr; gibi....
+        */
+        grid-template-rows: 1fr;
+
+        /* grid-auto-rows: 3fr; yaptığımızda satır değeri almayanlar için yükseklik oranı veya değeri veriririz 
+        burada 1.satır 1fr değer almış yani grid-auto-rows: 3fr; dediğimizde geri kalan satırlar 3fr oranında yükseklik değeri alır 
+        buradaki oran 1 e 3 tür..
+        birden fazla satır olduğunda grid-auto-rows kullanmak daha mantıklı.
+          */
+        grid-auto-rows: 3fr;
+
+
+        background-color: #034f84;
+        padding: 20px;
+      }
+
+      .item {
+        background-color: #f7786b;
+        padding: 20px;
+        margin: 20px;
+        color: #fff;
+        font-size: 25px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+    </div>
+  </body>
+</html>

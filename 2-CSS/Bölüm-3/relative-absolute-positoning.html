@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .box{
+            padding: 10px;
+            border: 5px solid #6d5b95;
+            margin-bottom: 10px;
+        }
+        .navbar{
+            background-color: #feb236;
+        }
+        .content{
+            background: #d64161 ;
+        }
+        .footer{
+            background: #ff7b25;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container1">
+        <div class="box navbar" >Navbar</div>
+        <div class="box content">Content</div>
+        <div class="box footer">Footer</div>
+    </div>
+
+    <!-- position: static | relative | fixed | absolute | sticky
+
+        position:static 
+        default özellik olan position:static olandır.
+        normal akış içerisinde hareket ettirilir
+
+
+
+        position:relative
+
+        relative özelliğinde div normal akşında olduğu gibi davranır ve verilen top:50px ve left:50px önündeki bir üst etiketi baz alarak ona  göre konumlandırılır, yani olduğu konumdan itibaren hareket ettirilir.
+
+        div{
+            position:relative
+            top:50px
+            left:50px
+        }
+
+        position:absolute
+
+        absolute özelliğinde div normal akşını bozar ve diğer etiketleri görmezden gelir kendini body etiketine göre konumladırır yani sol üst köşeden başlar 
+        verilen top ve left özellikleri body etiketini baz alır.. 
+
+        div{
+            position:absolute
+            top:50px
+            left:50px
+        }
+
+        -----------------------------------------------------------------------------------------------
+
+        div1{
+            position:relative
+        }
+
+        div2{
+            position:absolute
+            top:50px
+            left:50px
+        }
+
+        eğer div2 div1 in içerisinde ise ve div1 position:relative ve div2 position:absolute ise div2 kendini
+        body değilde div1 e göre konumladırılır çünkü absolute özelliği alan bir etiket kendinden önceki etikete bakar
+        eğer kendinden önceki relative özellği taşıypr ise kendini ona göre konumlandırır.
+
+
+    
+    
+    -->
+    
+
+    
+
+
+</body>
+</html>
